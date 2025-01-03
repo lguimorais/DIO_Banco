@@ -11,10 +11,12 @@ public class ContaTerminal {
         System.out.println("digite o numero da agencia: ");
         agencia = sc.nextLine();
         System.out.println("digite o seu nome completo: ");
-        nomecliente= sc.nextLine();
+        nomecliente = sc.nextLine();
         System.out.println("digite o numero da conta: ");
-        numconta= sc.nextInt();
- System.out.println("Olá "+ nomecliente +", obrigado por criar uma conta em nosso banco, sua agência é "+ agencia +" , conta " + numconta +" e seu saldo "+saldo +" já está disponível para saque");
+        numconta = sc.nextInt();
+
+        String mensagem = nomecliente.concat(", obrigado por criar uma conta em nosso banco, sua agência é "); agencia.concat(" , conta  ");
+        System.out.println("Olá " + mensagem  + numconta + " e seu saldo " + saldo + " já está disponível para saque");
 
     }
 }
